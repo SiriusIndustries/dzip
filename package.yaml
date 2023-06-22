@@ -5,29 +5,29 @@ main: ./distribution/index.js
 type: commonjs
 private: false
 scripts:
-  start: node ./distribution/index.js
-  build: >-
-    esbuild sources/index.ts --bundle --platform=node
-    --banner:js="#!/usr/bin/env node" --target=node14 --outdir=/distribution/
+    start: node ./distribution/index.js
+    build: >-
+        esbuild sources/index.ts --bundle --platform=node
+        --banner:js="#!/usr/bin/env node" --target=node14 --outdir=/distribution/
 bin:
-  dzip: ./distribution/index.js
+    dzip: ./distribution/index.js
 keywords:
-  - zip
-  - archive
-  - diff
+    - zip
+    - archive
+    - diff
 author: Sirius <www.sirius.cam>
 license: MPL-2.0
 repository:
-  type: git
-  url: git+ssh://git@github.com/SiriusIndustries/dzip.git
+    type: git
+    url: git+ssh://git@github.com/SiriusIndustries/dzip.git
 bugs:
-  url: https://github.com/SiriusIndustries/dzip/issues
+    url: https://github.com/SiriusIndustries/dzip/issues
 homepage: https://github.com/SiriusIndustries/dzip#readme
 dependencies:
-  chalk: ^5.2.0
-  prompt-sync: ^4.2.0
-  strip-ansi: ^7.1.0
-  treeify: ^1.1.0
+    chalk: ^5.2.0
+    prompt-sync: ^4.2.0
+    strip-ansi: ^7.1.0
+    treeify: ^1.1.0
 devDependencies:
-  '@types/node': ^20.3.1
-  esbuild: ^0.18.6
+    '@types/node': ^20.3.1
+    esbuild: ^0.18.6
