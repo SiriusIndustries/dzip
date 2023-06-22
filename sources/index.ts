@@ -90,7 +90,7 @@ if (difference.length > 100) {
 	console.log(chalk.gray(`Type ${chalk.blueBright("Y")} to print them all out here, ${chalk.blueBright("E")} to print to a text document, and ${chalk.blueBright("N")} to cancel and quit.`));
 	const answer: string = prompt(chalk.gray("> "));
 	console.log("");
-	switch (answer) {
+	switch (answer.toLowerCase()) {
 		case "Y":
 			break;
 		case "E":

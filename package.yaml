@@ -1,5 +1,5 @@
 name: '@siriusindustries/dzip'
-version: 1.0.1
+version: 1.0.2
 description: A simple tool for comparing the difference between ZIP archives.
 main: ./distribution/index.js
 type: commonjs
